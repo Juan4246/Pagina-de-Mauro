@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpintería Profesional - Contactos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="txt.css">
+    <style>
+        .contact-layout {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 90%;
+            margin: 20px auto;
+            justify-content: center;
+        }
+
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ffe100;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #ffe100;
+        }
+
+        .contact-form-container {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .contact-info h3 {
+            border-bottom: 2px solid #ffe100;
+            padding-bottom: 10px;
+        }
+
+        .contact-info p {
+            margin: 15px 0;
+            font-size: 18px;
+        }
+
+        .contact-info strong {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <div class="texto-bonito">
+        <h1>Contáctanos</h1>
+        <p>Estamos listos para empezar tu próximo proyecto de carpintería</p>
+    </div>
+
+    <!-- Menú de navegación -->
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+    </div>
+
+    <!-- Layout de Contacto -->
+    <div class="contact-layout">
+        <!-- Información Directa -->
+        <div class="contact-info">
+            <h3>Nuestros Datos</h3>
+            <p>📍 <strong>Dirección:</strong> 41920, San Juan De AznalFarache nave camino viejo el manchon,Sevilla, España</p>
+            <p>📞 <strong>Teléfono / WhatsApp:</strong> +34 624 98 47 83</p>
+            <p>✉️ <strong>Correo Electrónico:</strong> sebastian475f@gmail.com</p>
+        </div>
+
+        <!-- Formulario de Contacto -->
+        <div class="container2 contact-form-container" style="margin: 0;">
+            <h2>Escríbenos</h2>
+            <p style="color: black;">Déjanos tus datos y nos pondremos en contacto contigo lo antes posible.</p>
+            <form action="https://formspree.io/f/xvgznooq" method="POST">
+                <input type="text" name="nombre" placeholder="NOMBRE COMPLETO" required>
+                <input type="email" name="email" placeholder="CORREO ELECTRÓNICO" required>
+                <input type="tel" name="telefono" placeholder="TELÉFONO / CELULAR" required>
+                <textarea name="mensaje" placeholder="CUÉNTANOS TU PROYECTO" rows="5" required></textarea>
+                <button type="submit">ENVIAR CONSULTA</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <div class="container3">
+        <p>© 2025 Carpintería Profesional. Todos los derechos reservados.</p>
+    </div>
+</body>
+
+</html>
